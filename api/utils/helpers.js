@@ -72,6 +72,7 @@ class Helpers {
 static generatePatientCode() {
     const year = new Date().getFullYear().toString().slice(-2);
     const timestamp = Date.now().toString().slice(-6);
+    
     return `P${year}${timestamp}`;
 }
 
